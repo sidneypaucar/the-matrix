@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import UserComments from "./components/userComments.js";
 
+const API_URL = 'https://api.airtable.com/v0/app9GMqfkrcNGKaR0/Table%201?api_key=key1NApkdPeWu6bJy';
 
 function App() {
   const [userComments, setUserComments] = useState([]);
@@ -14,7 +15,7 @@ function App() {
     console.log('Getting User Comments');
 
     const getUserComments = async () => {
-      const resp = await axios.get('https://api.airtable.com/v0/app9GMqfkrcNGKaR0/Table%201?api_key=key1NApkdPeWu6bJy');
+      const resp = await axios.get(API_URL);
       console.log(resp.data);
       setUserComments(resp.data.records);
     }
@@ -22,9 +23,24 @@ function App() {
     getUserComments();
   }, []);
 
-  const handleSubmit = (ev) => {
+  const handleSubmit = async (ev) => {
     ev.preventDefault();
     console.log('form submitted');
+
+
+
+    const newUserComment = {
+      records: [
+        {
+          fields: {
+            user,
+            comment
+          }
+        }
+      ]
+    }
+
+    await axios.post( API_URL ,newUserComment )
   }
 
   return (
