@@ -22,7 +22,8 @@ function App() {
     getUserComments();
   }, []);
 
-  const handleSubmit = () => {
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
     console.log('form submitted');
   }
 
