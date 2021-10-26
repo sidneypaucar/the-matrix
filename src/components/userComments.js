@@ -1,7 +1,7 @@
-const UserComments = () => {
+const UserComments = ({postData}) => {
   return (
     <div>
-      <h1>Title: </h1>
+      <h1>User: {postData.fields.user}</h1>
     </div>
   )
 }

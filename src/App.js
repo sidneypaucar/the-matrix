@@ -23,7 +23,13 @@ function App() {
   return (
     <div>
       {userComments.map((userComments) => (
-        <h1 key = {userComments.id}>Author: {userComments.fields.author}</h1>
+        //<h1 key = {userComments.id}>Author: {userComments.fields.author}</h1>
+        <UserComments
+          key={userComments.id}
+          postData={userComments}
+        
+        
+        />
       ))}
     </div>
   );
