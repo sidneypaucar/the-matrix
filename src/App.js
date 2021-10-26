@@ -7,6 +7,8 @@ import UserComments from "./components/userComments.js";
 
 function App() {
   const [userComments, setUserComments] = useState([]);
+  const [user, setUser] = useState('');
+  const [comment, setComment] = useState('');
 
   useEffect(() => {
     console.log('Getting User Comments');
@@ -20,15 +22,28 @@ function App() {
     getUserComments();
   }, []);
 
+  const handleSubmit = () => {
+    console.log('form submitted');
+  }
+
   return (
     <div>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="user">User: </label>
+        <input type="text" id="user" onChange={(ev) => setUser(ev.target.value)}/>
+
+        <label htmlFor="commments">Comment: </label>
+        <input type="text" id="comment" onChange={(ev) => setComment(ev.target.value)}/>
+
+        <input type="submit" />
+      </form>
+
+      <hr />
+
       {userComments.map((userComments) => (
-        //<h1 key = {userComments.id}>Author: {userComments.fields.author}</h1>
         <UserComments
           key={userComments.id}
           postData={userComments}
-        
-        
         />
       ))}
     </div>
