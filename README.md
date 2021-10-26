@@ -6,10 +6,12 @@ The Matrix app is based off of the movie trilogy, in which the user decides whet
 ## WIREFRAMES:
 https://whimsical.com/the-matrix-2v2GJL95zJwAm66wew9k5Z
 
+![imageAlt](https://imgur.com/eLemDDa)
+
+![imageAlt]()
 
 
 ## API KEY: 
-key1NApkdPeWu6bJy 
 https://airtable.com/key1NApkdPeWu6bJy
 
 
@@ -52,7 +54,7 @@ PROJECT SCHEDULE:
 | -------- | ------------------------------------------ | -------- |
 | Oct 22-25 | Proposal Approval / Airtable Setup         | incomplete |
 | Oct 26   | Component Creation / Get, Set, Delete Data | incomplete |
-| Oct 27   | Oct. 12 cont'd / CSS Components            | incomplete |
-| Oct 28   | CSS Components cont'd / MVP                | incomplete |
+| Oct 27   | CSS Components                             | incomplete |
+| Oct 28   | CSS Components cont'd                      | incomplete |
 | Oct 29   | Advanced CSS                               | incomplete |
 | Oct 30   | Presentations                              | incomplete |
