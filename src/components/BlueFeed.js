@@ -1,10 +1,17 @@
-const BlueFeed = ({postData}) => {
+import axios from "axios";
+
+const API_URL = 'https://api.airtable.com/v0/app9GMqfkrcNGKaR0/Table%201?api_key=key1NApkdPeWu6bJy'
+
+const BlueFeed = ({ postData }) => {
   
-  const deleteUserComment = () => {
-    console.log('deleting');
+  const deleteUserComment = async () => {
+    console.log('deleting'); 
+
+  
+    await axios.delete( API_URL+`&records[]=${postData.id}`);
   };
 
-  return (
+  return ( 
     <div>
       <h1>User: {postData.fields.user}</h1>
       <p>{postData.fields.comment}</p>
