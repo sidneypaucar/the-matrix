@@ -4,7 +4,12 @@ import { useEffect, useState } from "react";
 
 import BlueFeed from "./components/BlueFeed";
 
-import { Route } from "react-router-dom";
+import RedFeed from "./components/RedFeed";
+
+import { Route , Link } from "react-router-dom";
+
+
+
 
 const API_URL = 'https://api.airtable.com/v0/app9GMqfkrcNGKaR0/Table%201?api_key=key1NApkdPeWu6bJy';
 
@@ -30,8 +35,6 @@ function App() {
     ev.preventDefault();
     console.log('form submitted');
 
-
-
     const newUserComment = {
       records: [
         {
@@ -44,15 +47,29 @@ function App() {
     }
 
     await axios.post(API_URL, newUserComment)
-    
     setToggleFetch(!toggleFetch);
   }
+
+
+
+
+
+
 
   return (
     <div>
       <Route exact path="/">
-      
+        <h1>Home Route</h1> 
       </Route>
+
+      <nav>
+        <Link to="/bluefeed">Blue</Link>
+        <Link to ="/redfeed">Red</Link>
+      </nav>
+      <hr /> 
+
+
+
       <form onSubmit={handleSubmit}>
         <label htmlFor="user">User: </label>
         <input value={user} type="text" id="user" onChange={(ev) => setUser(ev.target.value)}/>
@@ -63,14 +80,36 @@ function App() {
         <input type="submit" />
       </form>
 
-      <hr />
+      
+
+
 
       
       <Route path="/bluefeed">
+        <h1> You chose the blue button</h1>
       {userComments.map((userComment) => (
         <BlueFeed
-          key={userComment.id}
+          key={userComment.id} 
           postData={userComment}
+          toggleFetch={toggleFetch}
+          setToggleFetch={setToggleFetch}
+        />
+      ))}
+      </Route>
+
+      
+
+
+
+
+      <Route path="/redfeed">
+        <h1> You chose the red button</h1>
+      {userComments.map((userComment) => (
+        <RedFeed
+          key={userComment.id} 
+          postData={userComment}
+          toggleFetch={toggleFetch}
+          setToggleFetch={setToggleFetch}
         />
       ))}
       </Route>
