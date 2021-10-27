@@ -2,7 +2,9 @@ import axios from "axios";
 
 import { useEffect, useState } from "react";
 
-import UserComments from "./components/userComments.js";
+import BlueFeed from "./components/BlueFeed";
+
+import { Route } from "react-router-dom";
 
 const API_URL = 'https://api.airtable.com/v0/app9GMqfkrcNGKaR0/Table%201?api_key=key1NApkdPeWu6bJy';
 
@@ -47,22 +49,28 @@ function App() {
     <div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="user">User: </label>
-        <input type="text" id="user" onChange={(ev) => setUser(ev.target.value)}/>
+        <input value={user} type="text" id="user" onChange={(ev) => setUser(ev.target.value)}/>
 
-        <label htmlFor="commments">Comment: </label>
-        <input type="text" id="comment" onChange={(ev) => setComment(ev.target.value)}/>
+        <label htmlFor="commment">Comment: </label>
+        <input value={comment} type="text" id="comment" onChange={(ev) => setComment(ev.target.value)}/>
 
         <input type="submit" />
       </form>
 
       <hr />
 
-      {userComments.map((userComments) => (
-        <UserComments
-          key={userComments.id}
-          postData={userComments}
+      <Route path="/bluefeed">
+      {userComments.map((userComment) => (
+        <BlueFeed
+          key={userComment.id}
+          postData={userComment}
         />
       ))}
+      </Route>
+
+
+
+
     </div>
   );
 }

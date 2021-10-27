@@ -1,4 +1,4 @@
-const UserComments = ({postData}) => {
+const BlueFeed = ({postData}) => {
   return (
     <div>
       <h1>User: {postData.fields.user}</h1>
@@ -7,4 +7,4 @@ const UserComments = ({postData}) => {
   )
 }
 
-export default UserComments;
+export default BlueFeed;
