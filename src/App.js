@@ -12,6 +12,7 @@ function App() {
   const [userComments, setUserComments] = useState([]);
   const [user, setUser] = useState('');
   const [comment, setComment] = useState('');
+  const [toggleFetch, setToggleFetch] = useState(true);
 
   useEffect(() => {
     console.log('Getting User Comments');
@@ -23,7 +24,7 @@ function App() {
     }
 
     getUserComments();
-  }, []);
+  }, [toggleFetch]);
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
@@ -42,11 +43,16 @@ function App() {
       ]
     }
 
-    await axios.post( API_URL ,newUserComment )
+    await axios.post(API_URL, newUserComment)
+    
+    setToggleFetch(!toggleFetch);
   }
 
   return (
     <div>
+      <Route exact path="/">
+      
+      </Route>
       <form onSubmit={handleSubmit}>
         <label htmlFor="user">User: </label>
         <input value={user} type="text" id="user" onChange={(ev) => setUser(ev.target.value)}/>
@@ -59,6 +65,7 @@ function App() {
 
       <hr />
 
+      
       <Route path="/bluefeed">
       {userComments.map((userComment) => (
         <BlueFeed
@@ -68,7 +75,7 @@ function App() {
       ))}
       </Route>
 
-
+      
 
 
     </div>
