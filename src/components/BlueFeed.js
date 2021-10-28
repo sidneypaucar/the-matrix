@@ -1,5 +1,6 @@
-import axios from "axios";
+import "../App.css";
 
+import axios from "axios";
 
 const API_URL = 'https://api.airtable.com/v0/app9GMqfkrcNGKaR0/Table%201?api_key=key1NApkdPeWu6bJy'
 
@@ -15,7 +16,7 @@ const BlueFeed = ({ postData, toggleFetch, setToggleFetch }) => {
   };
   
   return (
-    <div>
+    <div className="Comment-Box">
       <p>User: {postData.fields.user}</p>
       <p>Comment: {postData.fields.comment}</p>
       <button onClick={deleteUserComment}>Delete</button>

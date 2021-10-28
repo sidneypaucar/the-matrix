@@ -53,8 +53,8 @@ function App() {
       {toggleShow ?
         <nav>
           <h1 > Which Will You Decide? </h1>
-          <Link to="/bluefeed" onClick={showText}>Blue Pill</Link>
-          <Link to="/redfeed" onClick={showText}>Red Pill</Link>
+          <Link to="/bluefeed" onClick={showText}><button className="Blue-Btn">Blue Pill</button></Link>
+          <Link to="/redfeed" onClick={showText}><button className="Red-Btn">Red Pill</button></Link>
         </nav>
       :null}
 

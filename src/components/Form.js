@@ -32,14 +32,17 @@ const Form = ({ postData, toggleFetch, setToggleFetch }) => {
   }
   
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="Form-Box">
+      <form className="Form" onSubmit={handleSubmit}>
         <label htmlFor="user">User: </label>
         <input value={user} type="text" id="user" onChange={(ev) => setUser(ev.target.value)}/>
 
-        <label htmlFor="commment">Comment: </label>
-        <input value={comment} type="text" id="comment" onChange={(ev) => setComment(ev.target.value)}/>
+        <br />
 
+        <label htmlFor="commment">Comment: </label>
+        <input value={comment} type="text" id="comment" onChange={(ev) => setComment(ev.target.value)} />
+        <br />
+        <br/> 
         <input type="submit" />
       </form> 
     </div>

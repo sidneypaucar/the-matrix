@@ -17,6 +17,48 @@ body {
 
 .video{
   margin: auto;
-  width: 100% !important;
-  
+  width: 100% !important; 
 }
+
+.Form-Box{
+  padding: 20px;
+  box-shadow: 5px 10px;
+  background-color: #05a167;
+  border-radius: 25px;
+}
+
+.Form{
+  text-align: center;
+  width: 500px;
+  max-width: 500px;
+
+
+  margin: 20px auto;
+}
+
+#comment {
+  margin-right: 37px;
+}
+
+.Comment-Box{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 20px;
+  box-shadow: 5px 10px;
+  background-color: #05a167;
+  border-radius: 25px;
+}
+
+/* .Blue-Btn{
+  background-color: blue;
+  color: white;
+  border: solid 2px black;
+  border-radius: 18px;
+}
+
+.Red-Btn{
+  background-color: red;
+  color: white;
+  border: solid 2px black;
+  border-radius: 18px;
+} */
