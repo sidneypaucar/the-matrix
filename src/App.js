@@ -6,6 +6,8 @@ import BlueFeed from "./components/BlueFeed";
 
 import RedFeed from "./components/RedFeed";
 
+import ReactPlayer from "react-player";
+
 
 import { Route , Link } from "react-router-dom";
 
@@ -48,6 +50,12 @@ function App() {
 
       <Route path="/bluefeed">
         <h1> You chose the blue button</h1>
+        <div>
+      <ReactPlayer
+        url="https://www.youtube.com/watch?v=9ix7TUGVYIo"
+      />
+      </div>
+
       {userComments.map((userComment) => (
         <BlueFeed
           key={userComment.id} 

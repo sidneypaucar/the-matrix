@@ -2,7 +2,7 @@ import axios from "axios";
 
 import { useState } from "react";
 
-import ReactPlayer from "react-player";
+
 
 const API_URL = 'https://api.airtable.com/v0/app9GMqfkrcNGKaR0/Table%201?api_key=key1NApkdPeWu6bJy'
 
@@ -40,11 +40,8 @@ const BlueFeed = ({ postData, toggleFetch, setToggleFetch }) => {
   return (
     
     <div>
-      <div>
-      <ReactPlayer
-        url="https://www.youtube.com/watch?v=9ix7TUGVYIo"
-      />
-      </div>
+      
+
       <form onSubmit={handleSubmit}>
         <label htmlFor="user">User: </label>
         <input value={user} type="text" id="user" onChange={(ev) => setUser(ev.target.value)}/>
