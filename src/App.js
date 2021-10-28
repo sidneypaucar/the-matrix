@@ -79,6 +79,7 @@ function App() {
       ))}
       </Route>
 
+      
       <Route path="/redfeed">
         <div>
         <ReactPlayer
@@ -86,14 +87,7 @@ function App() {
           />
         </div>
         <h1> Enjoy This Video You Little Sheep :)</h1>
-      {userComments.map((userComment) => (
-        <RedFeed
-          key={userComment.id} 
-          postData={userComment}
-          toggleFetch={toggleFetch}
-          setToggleFetch={setToggleFetch}
-        />
-      ))}
+        <RedFeed/>
       </Route>
     </div>
   );
