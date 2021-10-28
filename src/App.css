@@ -1,11 +1,11 @@
 .Header {
   font-size: larger;
-  color: black;
+  color: Black;
   text-align: center;
   text-decoration: none;
 }
 
-.Header a{
+.Header a {
   text-decoration: none;
   color: black;
   font-style: italic;
@@ -13,28 +13,33 @@
 
 body {
   text-align: center;
-  background-image: url(https://images4.alphacoders.com/270/27094.jpg) ;
+  /* background-image: url(https://images4.alphacoders.com/270/27094.jpg); */
   background-position: center;
   background-size: cover;
+  min-height: 100vh;
+  overflow: scroll;
+  border: 10px solid red;
+  position: relative;
+  padding-bottom: 100px;
 }
 
-.video{
-  margin: auto;
-  width: 100% !important; 
+.video {
+  margin: 0 auto;
+  width: 600px !important;
 }
 
-.Form-Box{
+.Form-Box {
   padding: 20px;
   box-shadow: 5px 10px;
   background-color: #05a167;
   border-radius: 25px;
+  margin-top: 20px;
 }
 
-.Form{
+.Form {
   text-align: center;
   width: 500px;
   max-width: 500px;
-
 
   margin: 20px auto;
 }
@@ -43,7 +48,7 @@ body {
   margin-right: 37px;
 }
 
-.Comment-Box{
+.Comment-Box {
   margin-top: 2%;
   margin-bottom: 2%;
   padding: 20px;
@@ -52,7 +57,7 @@ body {
   border-radius: 25px;
 }
 
-.Blue-Btn{
+.Blue-Btn {
   background-color: blue;
   color: white;
   border: solid 2px black;
@@ -60,7 +65,7 @@ body {
   margin: 15px;
 }
 
-.Red-Btn{
+.Red-Btn {
   background-color: red;
   color: white;
   border: solid 2px black;
@@ -70,4 +75,14 @@ body {
 
 nav {
   margin-top: 35%;
+}
+
+.Footer {
+  color: Black;
+  position: absolute;
+  bottom: 0px;
+  border: 1px solid green;
+  display: block;
+  width: 100vw;
+
 }

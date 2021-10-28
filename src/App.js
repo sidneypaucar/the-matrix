@@ -15,6 +15,7 @@ import ReactPlayer from "react-player";
 import './App.css';
 
 import { Route, Link } from "react-router-dom";
+import Footer from "./components/footer";
 
 
 const API_URL = 'https://api.airtable.com/v0/app9GMqfkrcNGKaR0/Table%201?api_key=key1NApkdPeWu6bJy';
@@ -63,6 +64,7 @@ function App() {
       <ReactPlayer className="video"
         url="https://www.youtube.com/watch?v=9ix7TUGVYIo"
           />
+          
           <Form
           toggleFetch={toggleFetch}
           setToggleFetch={setToggleFetch}
@@ -79,16 +81,17 @@ function App() {
       ))}
       </Route>
 
-      
       <Route path="/redfeed">
         <div>
-        <ReactPlayer
+        <ReactPlayer className="video"
         url="https://www.youtube.com/watch?v=Sdkwu2FvFfI"
           />
         </div>
         <h1> Enjoy This Video You Little Sheep :)</h1>
         <RedFeed/>
       </Route>
+
+      <section className="Footer" id="Footer-ID" ><Footer/></section>
     </div>
   );
 }
