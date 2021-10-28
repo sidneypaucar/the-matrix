@@ -29,16 +29,6 @@ The Matrix app is based off of the movie trilogy, in which the user decides whet
                 "comment": "hello world"
             },
             "createdTime": "2021-10-22T14:56:25.000Z"
-        },
-        {
-            "id": "recbEbn8TddUZyH1G",
-            "fields": {},
-            "createdTime": "2021-10-22T14:56:25.000Z"
-        },
-        {
-            "id": "recemH2fiasArLXer",
-            "fields": {},
-            "createdTime": "2021-10-22T14:56:25.000Z"
         }
     ]
 }
@@ -57,11 +47,11 @@ The Matrix app is based off of the movie trilogy, in which the user decides whet
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
 | Oct 22-25 | Proposal Approval / Airtable Setup         | Complete |
-| Oct 26   | Component Creation / Get, Set, Delete Data | incomplete |
-| Oct 27   | CSS Components                             | incomplete |
-| Oct 28   | CSS Components cont'd                      | incomplete |
-| Oct 29   | Advanced CSS                               | incomplete |
-| Oct 30   | Presentations                              | incomplete |
+| Oct 26   | Component Creation / Get, Set, Delete Data | Complete |
+| Oct 27   | CSS Components                             | Complete |
+| Oct 28   | CSS Components cont'd                      | Complete |
+| Oct 29   | Advanced CSS                               | Complete |
+| Oct 30   | Presentations                              | Complete |
 
 
 ## TIME FRAMES

@@ -12,10 +12,9 @@ import Form from "./components/Form";
 
 import ReactPlayer from "react-player";
 
+import './App.css';
 
-import { Route , Link } from "react-router-dom";
-
-
+import { Route, Link } from "react-router-dom";
 
 
 const API_URL = 'https://api.airtable.com/v0/app9GMqfkrcNGKaR0/Table%201?api_key=key1NApkdPeWu6bJy';
@@ -43,19 +42,22 @@ function App() {
     <div>
       <Route path="/">
         <Header />
+
+        <h1> Which Will You Decide? </h1>
+        <div>
+          
+        </div>
       </Route>
 
       <nav>
         <Link to="/bluefeed">Blue Pill</Link>
-        <hr /> 
         <Link to ="/redfeed">Red Pill</Link>
       </nav>
 
 
       <Route path="/bluefeed">
-        <h1> You chose the blue button</h1>
         <div>
-      <ReactPlayer
+      <ReactPlayer className="video"
         url="https://www.youtube.com/watch?v=9ix7TUGVYIo"
           />
           <Form
@@ -75,7 +77,12 @@ function App() {
       </Route>
 
       <Route path="/redfeed">
-        <h1> You chose the red button</h1>
+        <div>
+        <ReactPlayer
+        url="https://www.youtube.com/watch?v=Sdkwu2FvFfI"
+          />
+        </div>
+        <h1> Enjoy This Video You Little Sheep :)</h1>
       {userComments.map((userComment) => (
         <RedFeed
           key={userComment.id} 
