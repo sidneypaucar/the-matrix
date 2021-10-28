@@ -7,18 +7,41 @@
 
 .Header a {
   text-decoration: none;
-  color: black;
-  font-style: italic;
+  color: whitesmoke;
+  font-style:oblique;
+  text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
 }
 
 body {
   text-align: center;
-  /* background-image: url(https://images4.alphacoders.com/270/27094.jpg); */
+  background-image: url(https://images4.alphacoders.com/270/27094.jpg);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
   overflow: scroll;
-  border: 10px solid red;
   position: relative;
   padding-bottom: 100px;
 }
@@ -29,18 +52,22 @@ body {
 }
 
 .Form-Box {
+  display: flex;
+  justify-content: center;
   padding: 20px;
-  box-shadow: 5px 10px;
+
   background-color: #05a167;
   border-radius: 25px;
   margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
 }
 
 .Form {
   text-align: center;
   width: 500px;
   max-width: 500px;
-
   margin: 20px auto;
 }
 
@@ -78,11 +105,45 @@ nav {
 }
 
 .Footer {
-  color: Black;
+  color: whitesmoke;
   position: absolute;
   bottom: 0px;
-  border: 1px solid green;
   display: block;
   width: 100vw;
+  text-shadow: 1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000,
+    0px 1px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000,
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000,
+    0px 2px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 0px 0 #000,
+    1px 2px 0 #000,
+    -1px 2px 0 #000,
+    1px -2px 0 #000,
+    -1px -2px 0 #000,
+    2px 1px 0 #000,
+    -2px 1px 0 #000,
+    2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+
+@media only screen and (max-width: 475px){
+  body{
+    width: 100%;
+  }
+  
+  .video{
+    margin: 0 auto;
+  width: 80%;
+  }
 
 }
