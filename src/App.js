@@ -24,6 +24,12 @@ function App() {
   
   const [toggleFetch, setToggleFetch] = useState(true);
 
+  const [toggleShow, setToggleShow] = useState(true);
+  const showText = () => {
+    setToggleShow(!toggleShow);
+  }
+
+
   useEffect(() => {
     console.log('Getting User Comments');
 
@@ -42,14 +48,10 @@ function App() {
     <div>
       <Route path="/">
         <Header />
-
-        <h1> Which Will You Decide? </h1>
-        <div>
-          
-        </div>
       </Route>
 
       <nav>
+      <h1> Which Will You Decide? </h1>
         <Link to="/bluefeed">Blue Pill</Link>
         <Link to ="/redfeed">Red Pill</Link>
       </nav>
