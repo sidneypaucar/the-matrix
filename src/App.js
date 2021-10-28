@@ -47,15 +47,16 @@ function App() {
   return (
     <div>
       <Route path="/">
-        <Header />
+        <Header showText={showText}/>
       </Route>
-
-      <nav>
-      <h1> Which Will You Decide? </h1>
-        <Link to="/bluefeed">Blue Pill</Link>
-        <Link to ="/redfeed">Red Pill</Link>
-      </nav>
-
+      
+      {toggleShow ?
+        <nav>
+          <h1 > Which Will You Decide? </h1>
+          <Link to="/bluefeed" onClick={showText}>Blue Pill</Link>
+          <Link to="/redfeed" onClick={showText}>Red Pill</Link>
+        </nav>
+      :null}
 
       <Route path="/bluefeed">
         <div>
