@@ -17,6 +17,6 @@ body {
 
 .video{
   margin: auto;
-  width: 100%;
+  width: 100% !important;
   
 }
