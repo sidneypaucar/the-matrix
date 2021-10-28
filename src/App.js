@@ -2,9 +2,13 @@ import axios from "axios";
 
 import { useEffect, useState } from "react";
 
+import Header from "./components/Header";
+
 import BlueFeed from "./components/BlueFeed";
 
 import RedFeed from "./components/RedFeed";
+
+import Form from "./components/Form";
 
 import ReactPlayer from "react-player";
 
@@ -38,7 +42,7 @@ function App() {
   return (
     <div>
       <Route path="/">
-        <h1>ESCAPE FROM REALITY</h1> 
+        <Header />
       </Route>
 
       <nav>
@@ -53,7 +57,11 @@ function App() {
         <div>
       <ReactPlayer
         url="https://www.youtube.com/watch?v=9ix7TUGVYIo"
-      />
+          />
+          <Form
+          toggleFetch={toggleFetch}
+          setToggleFetch={setToggleFetch}
+          />
       </div>
 
       {userComments.map((userComment) => (
@@ -77,10 +85,6 @@ function App() {
         />
       ))}
       </Route>
-
-      
-
-
     </div>
   );
 }

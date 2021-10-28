@@ -46,7 +46,6 @@ The Matrix app is based off of the movie trilogy, in which the user decides whet
 
 ## MVP/POST MVP
 ### MVP
--Home page that changes screen when you click anywhere
 -Get and post reviews from airTable.
 -Use forms to create reviews and update Airtable.
 -Delete posts from the feed and airtable.
