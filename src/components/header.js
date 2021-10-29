@@ -3,7 +3,6 @@ import "../App.css";
 import { Link } from "react-router-dom";
 
 const Header = ({showText}) => {
-  console.log("working")
   return (
     <div className ="Header">
       <Link to="/">

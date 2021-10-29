@@ -14,7 +14,6 @@ const Form = ({ postData, toggleFetch, setToggleFetch }) => {
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
-    console.log('form submitted');
 
     const newUserComment = {
       records: [

@@ -37,11 +37,10 @@ function App() {
 
 
   useEffect(() => {
-    console.log('Getting User Comments');
-
+    
     const getUserComments = async () => {
+
       const resp = await axios.get(API_URL);
-      console.log(resp.data);
       setUserComments(resp.data.records);
     }
 

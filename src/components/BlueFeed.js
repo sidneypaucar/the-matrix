@@ -7,9 +7,7 @@ const API_URL = 'https://api.airtable.com/v0/app9GMqfkrcNGKaR0/Table%201?api_key
 const BlueFeed = ({ postData, toggleFetch, setToggleFetch }) => {
   
   const deleteUserComment = async () => {
-    console.log('deleting'); 
-
-  
+    
     await axios.delete(API_URL + `&records[]=${postData.id}`);
     
     setToggleFetch(!toggleFetch);
