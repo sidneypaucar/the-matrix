@@ -59,6 +59,19 @@ body {
     -2px -1px 0 #000;
 }
 
+.Matrix-Comment{
+  font-family: "Fira Code", monospace;
+  color: limegreen;
+  animation-direction: alternate;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000,
+    1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000,
+    2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000,
+    -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+
 .Blue-Btn {
   background-color: blue;
   color: white;
@@ -99,6 +112,7 @@ body {
 }
 
 #comment {
+  margin-top: 10px;
   font-family: "Inconsolata";
   height: 30px;
 }
@@ -188,5 +202,9 @@ nav {
   .video {
     margin: 0 auto;
     width: 50%;
+  }
+
+  .Matrix-Header{
+    font-size: 20px;
   }
 }
