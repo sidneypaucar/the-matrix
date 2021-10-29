@@ -76,8 +76,10 @@ body {
 }
 
 .Comment-Box {
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 20px;
   background-color: #05a167;
   border-radius: 25px;
@@ -92,7 +94,8 @@ body {
   color: white;
   border: solid 2px black;
   border-radius: 18px;
-  margin: 15px;
+  margin: 20px;
+  font-size: 18px;
 }
 
 .Red-Btn {
@@ -100,11 +103,12 @@ body {
   color: white;
   border: solid 2px black;
   border-radius: 18px;
-  margin: 15px;
+  margin: 20px;
+  font-size: 18px;
 }
 
 nav {
-  margin-top: 30%;
+  margin-top: 20%;
   color: whitesmoke;
   font-family: 'Inconsolata';
   text-shadow: 1px 1px 0 #000,
