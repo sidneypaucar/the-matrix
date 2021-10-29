@@ -46,7 +46,7 @@ function App() {
 
       <Route path="/bluefeed">
         <div>
-          <ReactPlayer className="Video"
+          <ReactPlayer className="video"
             url="https://www.youtube.com/watch?v=9ix7TUGVYIo"
           />
           <Form
@@ -66,7 +66,7 @@ function App() {
 
       <Route path="/redfeed">
         <div>
-          <ReactPlayer className="Video"
+          <ReactPlayer className="video"
             url="https://www.youtube.com/watch?v=Sdkwu2FvFfI"
           />
         </div>
