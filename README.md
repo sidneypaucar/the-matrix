@@ -4,14 +4,11 @@
 A friend who you have not seen after several years reaches out to you and sends you a link via iMessage, called "The Matrix". The Matrix is losely based off of the movie franchise in which the user must decide whether to either take the red pill, or blue one. Each pill navigates the user into their choice, either find out the secrets that lie beyond, or rather remain sane and watch funny videos.
 
 ## WIREFRAMES
-
 ![imageAlt](https://i.imgur.com/mnShYX0.png)
-
 ![imageAlt](https://i.imgur.com/xDahWOg.png)
 
 ## COMPONENT HIERARCHY
 ![imageAlt](https://i.imgur.com/NtoB1Pf.png)
-
 
 ## API 
 https://airtable.com/shrd7YDSCFMOH0tME
@@ -43,8 +40,6 @@ https://airtable.com/shrd7YDSCFMOH0tME
 - Create a red button that will provide user with a second option.
 - Animate texts to look more futuristic.
 
-
-
 ## PROJECT SCHEDULE
 | Day      | Deliverable                                | Status   |
 | -------- | ------------------------------------------ | -------- |
@@ -57,3 +52,16 @@ https://airtable.com/shrd7YDSCFMOH0tME
 
 
 ## TIME FRAMES
+| Component                 | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Proposal                  |    H     |      2hrs      |     6hrs      |    6hrs     |
+| Airtable setup            |    H     |     .5hrs      |     3hrs      |    3hrs     |
+| Clickable icons           |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Data population           |    H     |      3hrs      |     6hrs      |    6hrs     |
+| Form creation             |    H     |      3hrs      |     5hrs      |    5hrs     |
+| Data creation/update      |    H     |      3hrs      |     6hrs      |    6hrs     |
+| Data deletion             |    H     |      3hrs      |     4hrs      |    4hrs     |
+| Component CSS Blue        |    H     |      5hrs      |     12hrs     |    12hrs    |
+| Component CSS Red         |    H     |      5hrs      |     5hrs      |    5hrs     |
+| Component CSS Form        |    H     |      5hrs      |     6hrs      |    6hrs     |
+| Total                     |    H     |    32.5hrs     |     56hrs     |    56hrs    |
