@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Source+Code+Pro:wght@300&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
 
 .Header {
@@ -163,17 +162,14 @@ nav {
     -2px -1px 0 #000;
 }
 
-#SubmitBtn {
-  color: black;
-  text-decoration-color: blue;
-}
+
 
 @media only screen and (max-width: 475px) {
   body {
     width: 100%;
   }
 
-  .video {
+  .Video {
     margin: 0 auto;
     width: 50%;
   }

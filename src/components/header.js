@@ -1,5 +1,4 @@
 import "../App.css";
-
 import { Link } from "react-router-dom";
 
 const Header = ({showText}) => {
@@ -9,7 +8,6 @@ const Header = ({showText}) => {
         <h1 className="headerText" onClick={showText}>ESCAPE FROM REALITY</h1>
       </Link>
     </div>
-
   )
 }
 
