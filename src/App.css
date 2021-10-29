@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Source+Code+Pro:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Source+Code+Pro:wght@300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap");
 
 .Header {
   font-size: larger;
@@ -12,37 +12,21 @@
 .Header a {
   text-decoration: none;
   color: lime;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   letter-spacing: 5px;
-  text-shadow: 1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    0px 1px 0 #000,
-    0px -1px 0 #000,
-    -1px 0px 0 #000,
-    1px 0px 0 #000,
-    2px 2px 0 #000,
-    -2px 2px 0 #000,
-    2px -2px 0 #000,
-    -2px -2px 0 #000,
-    0px 2px 0 #000,
-    0px -2px 0 #000,
-    -2px 0px 0 #000,
-    2px 0px 0 #000,
-    1px 2px 0 #000,
-    -1px 2px 0 #000,
-    1px -2px 0 #000,
-    -1px -2px 0 #000,
-    2px 1px 0 #000,
-    -2px 1px 0 #000,
-    2px -1px 0 #000,
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000,
+    1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000,
+    2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000,
+    -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000,
     -2px -1px 0 #000;
 }
 
 body {
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)) , url(https://images4.alphacoders.com/270/27094.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(https://images4.alphacoders.com/270/27094.jpg);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -50,30 +34,13 @@ body {
   position: relative;
   padding-bottom: 100px;
   color: rgb(255, 255, 255);
-  font-family: 'Inconsolata';
-  text-shadow: 1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    0px 1px 0 #000,
-    0px -1px 0 #000,
-    -1px 0px 0 #000,
-    1px 0px 0 #000,
-    2px 2px 0 #000,
-    -2px 2px 0 #000,
-    2px -2px 0 #000,
-    -2px -2px 0 #000,
-    0px 2px 0 #000,
-    0px -2px 0 #000,
-    -2px 0px 0 #000,
-    2px 0px 0 #000,
-    1px 2px 0 #000,
-    -1px 2px 0 #000,
-    1px -2px 0 #000,
-    -1px -2px 0 #000,
-    2px 1px 0 #000,
-    -2px 1px 0 #000,
-    2px -1px 0 #000,
+  font-family: "Inconsolata";
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000,
+    1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000,
+    2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000,
+    -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000,
     -2px -1px 0 #000;
 }
 
@@ -103,7 +70,6 @@ body {
   padding: 30px 20px 40px 20px;
 }
 
-
 .Form-Box {
   display: flex;
   justify-content: center;
@@ -113,46 +79,42 @@ body {
   margin: 20px 70px 20px 70px;
 }
 
-#user{
-  font-family: 'Inconsolata';
+#user {
+  font-family: "Inconsolata";
 }
 
 #comment {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   height: 30px;
 }
 
-.User-Feed{
-  font-family: 'Fira Code', monospace;
+.User-Feed {
+  font-family: "Fira Code", monospace;
   color: rgb(0, 85, 0);
   margin-bottom: 0px;
 }
 
-.User-Name{
+.User-Name {
   margin-top: 0px;
-  font-family: 'Fira Code', monospace;
-  
+  font-family: "Fira Code", monospace;
 }
 
-.User-Comment{
+.User-Comment {
   overflow: hidden;
   white-space: nowrap;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
   margin: auto;
   margin-bottom: 20px;
-  animation:
-  typing 3.5s steps(40, end),
-  blink-caret .75s step-end infinite;
+  animation: typing 4.5s steps(40, end);
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: limegreen; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .Form {
@@ -160,7 +122,7 @@ body {
   width: 500px;
   max-width: 500px;
   margin: 20px auto;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
 }
 
 .Comment-Box {
@@ -169,37 +131,20 @@ body {
   border: solid 5px limegreen;
   color: limegreen;
   background-color: black;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   text-align: center;
 }
 
 nav {
   margin-top: 20%;
   color: whitesmoke;
-  font-family: 'Inconsolata';
-  text-shadow: 1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    0px 1px 0 #000,
-    0px -1px 0 #000,
-    -1px 0px 0 #000,
-    1px 0px 0 #000,
-    2px 2px 0 #000,
-    -2px 2px 0 #000,
-    2px -2px 0 #000,
-    -2px -2px 0 #000,
-    0px 2px 0 #000,
-    0px -2px 0 #000,
-    -2px 0px 0 #000,
-    2px 0px 0 #000,
-    1px 2px 0 #000,
-    -1px 2px 0 #000,
-    1px -2px 0 #000,
-    -1px -2px 0 #000,
-    2px 1px 0 #000,
-    -2px 1px 0 #000,
-    2px -1px 0 #000,
+  font-family: "Inconsolata";
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000,
+    1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000,
+    2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000,
+    -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000,
     -2px -1px 0 #000;
 }
 
@@ -209,44 +154,27 @@ nav {
   bottom: 0px;
   display: block;
   width: 100vw;
-  text-shadow: 1px 1px 0 #000,
-    -1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    0px 1px 0 #000,
-    0px -1px 0 #000,
-    -1px 0px 0 #000,
-    1px 0px 0 #000,
-    2px 2px 0 #000,
-    -2px 2px 0 #000,
-    2px -2px 0 #000,
-    -2px -2px 0 #000,
-    0px 2px 0 #000,
-    0px -2px 0 #000,
-    -2px 0px 0 #000,
-    2px 0px 0 #000,
-    1px 2px 0 #000,
-    -1px 2px 0 #000,
-    1px -2px 0 #000,
-    -1px -2px 0 #000,
-    2px 1px 0 #000,
-    -2px 1px 0 #000,
-    2px -1px 0 #000,
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000,
+    1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000,
+    2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000,
+    -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000,
     -2px -1px 0 #000;
 }
 
-#SubmitBtn{
+#SubmitBtn {
   color: black;
   text-decoration-color: blue;
 }
 
-@media only screen and (max-width: 475px){
-  body{
+@media only screen and (max-width: 475px) {
+  body {
     width: 100%;
   }
-  
-  .video{
+
+  .video {
     margin: 0 auto;
-  width: 50%;
+    width: 50%;
   }
 }
