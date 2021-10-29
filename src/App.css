@@ -40,7 +40,8 @@
 
 body {
   text-align: center;
-  background-image: url(https://images4.alphacoders.com/270/27094.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(https://images4.alphacoders.com/270/27094.jpg);
+  
   background-position: center;
   background-size: cover;
   min-height: 100vh;
