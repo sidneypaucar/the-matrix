@@ -111,8 +111,9 @@ body {
 }
 
 #comment {
-  margin-right: 23px;
+  margin-right: 20px;
   font-family: 'Inconsolata';
+  height: 30px;
 }
 
 .Blue-Btn {

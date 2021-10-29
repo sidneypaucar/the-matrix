@@ -40,7 +40,7 @@ const Form = ({ postData, toggleFetch, setToggleFetch }) => {
         <br />
 
         <label htmlFor="commment">Comment: </label>
-        <input value={comment} type="text" id="comment" onChange={(ev) => setComment(ev.target.value)} />
+        <textarea value={comment} type="text" id="comment" onChange={(ev) => setComment(ev.target.value)} />
         <br />
         <br/> 
         <input className= "SubmitBtn" type="submit" />
