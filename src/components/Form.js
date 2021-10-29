@@ -43,7 +43,7 @@ const Form = ({ postData, toggleFetch, setToggleFetch }) => {
         <input value={comment} type="text" id="comment" onChange={(ev) => setComment(ev.target.value)} />
         <br />
         <br/> 
-        <input type="submit" />
+        <input className= "SubmitBtn" type="submit" />
       </form> 
     </div>
   ) 
