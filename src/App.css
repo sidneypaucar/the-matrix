@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Source+Code+Pro:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
 .Header {
   font-size: larger;
   color: Black;
@@ -119,13 +121,15 @@ body {
 }
 
 .User-Feed{
-  font-family: 'Inconsolata';
+  font-family: 'Fira Code', monospace;
   color: rgb(0, 85, 0);
   margin-bottom: 0px;
 }
 
 .User-Name{
   margin-top: 0px;
+  font-family: 'Fira Code', monospace;
+  
 }
 
 .User-Comment{
@@ -169,6 +173,7 @@ body {
   color: limegreen;
   background-color: black;
   font-family: 'Inconsolata';
+  text-align: center;
 }
 
 nav {
