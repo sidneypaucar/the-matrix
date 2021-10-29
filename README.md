@@ -1,7 +1,7 @@
 # The Matrix
 
 ## DESCRIPTION
-The Matrix app is based off of the movie trilogy, in which the user decides whether they want to take either the red or blue pill. Each pill will navigate the user into another screen, either become released from this simulation we call reality, or remain a sheep in this world.
+Your friend who you have not seen after several years reaches out to you and sends you a link via iMessage, called "The Matrix". The Matrix is losely based off of the movie franchise in which the user must decide whether to either take the red pill, or blue one. Each pill will navigate the user into their choice, either find out the secrets that lie beyond, or rather remain sane and watch funny videos.
 
 ## WIREFRAMES
 

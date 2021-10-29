@@ -177,6 +177,15 @@ nav {
     -2px -1px 0 #000;
 }
 
+.Red-Choice{
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  margin: auto;
+  margin-bottom: 20px;
+  animation: typing 4.5s steps(40, end);
+}
+
 .Footer {
   color: whitesmoke;
   position: absolute;
