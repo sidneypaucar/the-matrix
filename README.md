@@ -35,12 +35,15 @@ https://airtable.com/shrd7YDSCFMOH0tME
 
 ## MVP/POST MVP
 ### MVP
--Get and post reviews from airTable.
--Use forms to create reviews and update Airtable.
--Delete posts from the feed and airtable.
+- Get and post reviews from airTable.
+- Use forms to create reviews and update Airtable.
+- Delete posts from the feed and airtable.
 
 ### POST MVP
--Create a second button that will also get and post user comments.
+- Create a red button that will provide user with a second option.
+- Animate texts to look more futuristic.
+
+
 
 ## PROJECT SCHEDULE
 | Day      | Deliverable                                | Status   |
