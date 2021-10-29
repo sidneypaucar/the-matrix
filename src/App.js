@@ -59,7 +59,7 @@ function App() {
       {toggleShow ?
         <nav>
           <Menu />
-          <Link to="/bluefeed" onClick={showText}><button className="Blue-Btn">Blue Pill</button></Link>
+          <Link to="/bluefeed" onClick={showText}><button className="Blue-Btn"></button></Link>
           <Link to="/redfeed" onClick={showText}><button className="Red-Btn"></button></Link>
         </nav>
         : null}
