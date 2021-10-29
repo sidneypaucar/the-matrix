@@ -10,7 +10,7 @@ The Matrix app is based off of the movie trilogy, in which the user decides whet
 ![imageAlt](https://i.imgur.com/4lBJobu.png)
 
 ##COMPONENT HIERARCHY
-![imageAlt](https://i.imgur.com/qAIBklq.png)
+![imageAlt](https://i.imgur.com/BIHRSUp.png)
 
 
 ## API 
