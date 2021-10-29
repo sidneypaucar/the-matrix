@@ -48,52 +48,52 @@ function App() {
   return (
     <div>
       <Route path="/">
-        <Header showText={showText}/>
+        <Header showText={showText} />
       </Route>
       
       {toggleShow ?
         <nav>
-          <h1 > Which Will You Decide? </h1>
+          <h2>This is your last chance. <br/>After this there is no turning back. <br/>You take the blue pill, the story ends;<br/> you wake up in your bed and <br/>believe whatever you want to believe.</h2>
+          <h1> Which Will You Decide? </h1>
           <Link to="/bluefeed" onClick={showText}><button className="Blue-Btn">Blue Pill</button></Link>
           <Link to="/redfeed" onClick={showText}><button className="Red-Btn">Red Pill</button></Link>
         </nav>
-      :null}
+        : null}
 
       <Route path="/bluefeed">
         <div>
-      <ReactPlayer className="video"
-        url="https://www.youtube.com/watch?v=9ix7TUGVYIo"
+          <ReactPlayer className="video"
+            url="https://www.youtube.com/watch?v=9ix7TUGVYIo"
           />
-          
           <Form
-          toggleFetch={toggleFetch}
-          setToggleFetch={setToggleFetch}
+            toggleFetch={toggleFetch}
+            setToggleFetch={setToggleFetch}
           />
-      </div>
+        </div>
 
-      {userComments.map((userComment) => (
-        <BlueFeed
-          key={userComment.id} 
-          postData={userComment}
-          toggleFetch={toggleFetch}
-          setToggleFetch={setToggleFetch}
-        />
-      ))}
+        {userComments.map((userComment) => (
+          <BlueFeed
+            key={userComment.id}
+            postData={userComment}
+            toggleFetch={toggleFetch}
+            setToggleFetch={setToggleFetch}
+          />
+        ))}
       </Route>
 
       <Route path="/redfeed">
         <div>
-        <ReactPlayer className="video"
-        url="https://www.youtube.com/watch?v=Sdkwu2FvFfI"
+          <ReactPlayer className="video"
+            url="https://www.youtube.com/watch?v=Sdkwu2FvFfI"
           />
         </div>
-        <h1> Enjoy This Video You Little Sheep :)</h1>
-        <RedFeed/>
+        <h1> Enjoy This Video You Little Sheep.</h1>
+        <RedFeed />
       </Route>
 
-      <section className="Footer" id="Footer-ID" ><Footer/></section>
+      <section className="Footer" id="Footer-ID" ><Footer /></section>
     </div>
-  );
+  )
 }
 
 export default App;

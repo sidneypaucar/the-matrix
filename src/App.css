@@ -7,7 +7,7 @@
 
 .Header a {
   text-decoration: none;
-  color: whitesmoke;
+  color: lime;
   font-style:oblique;
   text-shadow: 1px 1px 0 #000,
     -1px 1px 0 #000,
@@ -55,8 +55,8 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px;
-
-  background-color: #05a167;
+  background-color: black;
+  color: green;
   border-radius: 25px;
   margin-top: 20px;
   margin-left: 20px;
@@ -101,7 +101,8 @@ body {
 }
 
 nav {
-  margin-top: 35%;
+  margin-top: 30%;
+  color: whitesmoke;
 }
 
 .Footer {
