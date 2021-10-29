@@ -60,7 +60,7 @@ function App() {
         <nav>
           <Menu />
           <Link to="/bluefeed" onClick={showText}><button className="Blue-Btn">Blue Pill</button></Link>
-          <Link to="/redfeed" onClick={showText}><button className="Red-Btn">Red Pill</button></Link>
+          <Link to="/redfeed" onClick={showText}><button className="Red-Btn"></button></Link>
         </nav>
         : null}
 

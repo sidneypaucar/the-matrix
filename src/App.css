@@ -96,9 +96,10 @@ body {
   background-color: red;
   color: white;
   border: solid 3px black;
-  border-radius: 18px;
+  border-radius: 50px;
   margin: 20px;
   font-size: 18px;
+  padding: 30px 20px 40px 20px;
 }
 
 
@@ -139,20 +140,18 @@ body {
   white-space: nowrap;
   letter-spacing: .15em;
   margin-block-start: 1em;
-    margin-block-end: 1em;
+  margin-block-end: 1em;
   animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
 
 }
 
-/* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: limegreen; }
