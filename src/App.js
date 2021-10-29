@@ -87,7 +87,6 @@ function App() {
             url="https://www.youtube.com/watch?v=Sdkwu2FvFfI"
           />
         </div>
-        <h1> Enjoy This Video You Little Sheep.</h1>
         <RedFeed />
       </Route>
 
