@@ -81,42 +81,6 @@ body {
   width: 600px !important;
 }
 
-.Form-Box {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-
-  color: limegreen;
-  border-width: 10px;
-  margin: 20px 70px 20px 70px;
-}
-
-.Form {
-  text-align: center;
-  width: 500px;
-  max-width: 500px;
-  margin: 20px auto;
-  font-family: 'Inconsolata';
-}
-
-.Comment-Box {
-  margin: 20px 70px 20px 70px;
-  padding: 20px;
-  color: limegreen;
-  background-color: black;
-  font-family: 'Inconsolata';
-}
-
-#user{
-  font-family: 'Inconsolata';
-}
-
-#comment {
-
-  font-family: 'Inconsolata';
-  height: 30px;
-}
-
 .Blue-Btn {
   background-color: blue;
   color: white;
@@ -133,6 +97,56 @@ body {
   border-radius: 18px;
   margin: 20px;
   font-size: 18px;
+}
+
+
+.Form-Box {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: limegreen;
+  border-width: 10px;
+  margin: 20px 70px 20px 70px;
+}
+
+#user{
+  font-family: 'Inconsolata';
+}
+
+#comment {
+  font-family: 'Inconsolata';
+  height: 30px;
+}
+
+.User-Feed{
+  font-family: 'Inconsolata';
+  color: rgb(0, 85, 0);
+  margin-bottom: 0px;
+}
+
+.User-Name{
+  margin-top: 0px;
+}
+
+.User-Comment{
+  
+}
+
+.Form {
+  text-align: center;
+  width: 500px;
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: 'Inconsolata';
+}
+
+.Comment-Box {
+  margin: 20px 70px 20px 70px;
+  padding: 20px;
+  border: solid 5px limegreen;
+  color: limegreen;
+  background-color: black;
+  font-family: 'Inconsolata';
 }
 
 nav {

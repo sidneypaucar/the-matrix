@@ -17,8 +17,9 @@ const BlueFeed = ({ postData, toggleFetch, setToggleFetch }) => {
   
   return (
     <div className="Comment-Box">
-      <h2>{postData.fields.user}</h2>
-      <h4>{postData.fields.comment}</h4>
+      <h2 className="User-Feed">Username</h2>
+      <h2 className="User-Name">{postData.fields.user}</h2>
+      <h4 className="User-Comment">{postData.fields.comment}</h4>
       <button onClick={deleteUserComment}>Delete</button>
     </div>
   ) 
