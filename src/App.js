@@ -1,7 +1,5 @@
 import axios from "axios";
 
-import { useEffect, useState } from "react";
-
 import Header from "./components/Header";
 
 import BlueFeed from "./components/BlueFeed";
@@ -12,10 +10,12 @@ import Form from "./components/Form";
 
 import ReactPlayer from "react-player";
 
+import { useEffect, useState } from "react";
+
 import './App.css';
 
 import { Route, Link } from "react-router-dom";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 
 const API_URL = 'https://api.airtable.com/v0/app9GMqfkrcNGKaR0/Table%201?api_key=key1NApkdPeWu6bJy';
@@ -53,7 +53,7 @@ function App() {
       
       {toggleShow ?
         <nav>
-          <h2>This is your last chance. <br/>After this there is no turning back. <br/>You take the blue pill, the story ends;<br/> you wake up in your bed and <br/>believe whatever you want to believe.</h2>
+          <h3>This is your last chance. <br/>After this there is no turning back. <br/>You take the blue pill, the story ends;<br/> you wake up in your bed and <br/>believe whatever you want to believe.</h3>
           <h1> Which Will You Decide? </h1>
           <Link to="/bluefeed" onClick={showText}><button className="Blue-Btn">Blue Pill</button></Link>
           <Link to="/redfeed" onClick={showText}><button className="Red-Btn">Red Pill</button></Link>

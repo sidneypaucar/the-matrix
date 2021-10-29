@@ -37,7 +37,7 @@
 
 body {
   text-align: center;
-  background-image: url(https://images4.alphacoders.com/270/27094.jpg);
+  /* background-image: url(https://images4.alphacoders.com/270/27094.jpg); */
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -49,6 +49,7 @@ body {
 .video {
   margin: 0 auto;
   width: 600px !important;
+  
 }
 
 .Form-Box {
@@ -79,7 +80,7 @@ body {
   margin-top: 2%;
   margin-bottom: 2%;
   padding: 20px;
-  box-shadow: 5px 10px;
+
   background-color: #05a167;
   border-radius: 25px;
 }
@@ -144,7 +145,7 @@ nav {
   
   .video{
     margin: 0 auto;
-  width: 80%;
+  width: 50%;
   }
 
 }

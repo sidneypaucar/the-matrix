@@ -2,7 +2,7 @@
 const RedFeed = () => {
   return (
     <div>
-      <h2>Click the title to go home.</h2>
+      <h2>Click on the title to go home.</h2>
     </div>
   ) 
 }
