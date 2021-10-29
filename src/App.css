@@ -76,6 +76,7 @@ body {
 }
 
 .video {
+  position: relative;
   margin: 0 auto;
   width: 600px !important;
 }
@@ -84,7 +85,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 30px;
-  background-color: black;
+
   color: limegreen;
   border-width: 10px;
   margin: 20px 70px 20px 70px;
@@ -111,7 +112,7 @@ body {
 }
 
 #comment {
-  margin-right: 20px;
+
   font-family: 'Inconsolata';
   height: 30px;
 }
@@ -196,8 +197,9 @@ nav {
     -2px -1px 0 #000;
 }
 
-submit{
-  color: blue;
+#SubmitBtn{
+  color: black;
+  text-decoration-color: blue;
 }
 
 @media only screen and (max-width: 475px){
