@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import BlueFeed from "./components/BlueFeed";
 import RedFeed from "./components/RedFeed";
 import Form from "./components/Form";
-import ReactPlayer from "react-player";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
@@ -30,6 +29,10 @@ function App() {
     getUserComments();
   }, [toggleFetch]);
 
+
+let videoBlue = "https://www.youtube.com/watch?v=9ix7TUGVYIo";
+let videoRed = "https://www.youtube.com/watch?v=Sdkwu2FvFfI";
+
   return (
     <div>
       <Route path="/">
@@ -46,9 +49,19 @@ function App() {
 
       <Route path="/bluefeed">
         <div>
-          <ReactPlayer className="video"
-            url="https://www.youtube.com/watch?v=9ix7TUGVYIo"
-          />
+          <div className='vid-container'>
+          <iframe title="matrix video"
+            className="video-blue"
+            src={
+                videoBlue.includes("/watch?v=")
+                ? videoBlue.replace("/watch?v=", "/embed/")
+                : videoBlue
+                }
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen>
+          </iframe>
+          </div>
           <h1 className="Matrix-Header">WELCOME BACK INTO THE MATRIX</h1>
           <h3 className="Matrix-Comment">document your experience.</h3>
           <Form
@@ -68,9 +81,19 @@ function App() {
 
       <Route path="/redfeed">
         <div>
-          <ReactPlayer className="video"
-            url="https://www.youtube.com/watch?v=Sdkwu2FvFfI"
-          />
+          <div className='vid-container'>
+          <iframe title = 'vine video'
+            className="video-red"
+            src={
+                videoRed.includes("/watch?v=")
+                ? videoRed.replace("/watch?v=", "/embed/")
+                : videoRed
+                }
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen>
+          </iframe>
+          </div>
         </div>
         <RedFeed />
       </Route>
